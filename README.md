@@ -43,7 +43,7 @@ pip install oauth2client
 ```
 python3 generate_drive_token.py
 ```
-OR use online terminal
+OR use online terminal (for NOOBS)
 
 [![Run on Repl.it](https://repl.it/badge/github/death-angel-141/String-Session-Generator)](https://CraftySeagreenMethod.loda6969.repl.run)
 
@@ -79,7 +79,7 @@ pip install pyrogram tgcrypto
 ```
 python3 generate_string_session.py
 ```
-OR use online terminal
+OR use online terminal (for NOOBS)
 
 [![Run on Repl.it](https://repl.it/badge/github/death-angel-141/String-Session-Generator)](https://HastyCornsilkRecovery.loda6969.repl.run) 
 
