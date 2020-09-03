@@ -12,10 +12,9 @@ This project is heavily inspired from @Izzy12's telegram bot.
 
 # Features supported:
 - Clone Shareable Gdrive Files and Folders
-- Docker support
 - Uploading To Team Drives.
 - Index Link support
-- Service account support
+- Service Account support
 
 
 # Deploy in Heroku
