@@ -18,14 +18,13 @@ This project is heavily inspired from @Izzy12's telegram bot.
 - Service account support
 
 
-# How to deploy in Heroku?
+# Deploy in Heroku
 Hit the deploy to heroku button and follow the further instructions in the screen:
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/death-angel-141/Clone-Bot.git)
 
 
- 
 
 ## Getting Google OAuth API credential or SECRET_JSON
 
