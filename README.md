@@ -11,7 +11,7 @@ This is a telegram bot writen in python for cloning files/folders to our beloved
 This project is heavily inspired from @Izzy12's telegram bot.
 
 # Features supported:
-- Clone Gdrive Files and Folders
+- Clone Shareable Gdrive Files and Folders
 - Docker support
 - Uploading To Team Drives.
 - Index Link support
