@@ -39,8 +39,6 @@ Hit the deploy to heroku button and follow the further instructions in the scree
 
 ```
 pip install oauth2client
-```
-```
 python3 generate_drive_token.py
 ```
 OR use online terminal (for NOOBS)
@@ -75,8 +73,6 @@ Fill up rest of the fields in app.json. Meaning of each fields are discussed bel
 
 ```
 pip install pyrogram tgcrypto
-```
-```
 python3 generate_string_session.py
 ```
 OR use online terminal (for NOOBS)
