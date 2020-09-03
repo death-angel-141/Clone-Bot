@@ -22,7 +22,7 @@ This project is heavily inspired from @Izzy12's telegram bot.
 Hit the deploy to heroku button and follow the further instructions in the screen:
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/death-angel-141/Gdrive-Cloner.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/death-angel-141/Clone-Bot.git)
 
 
  
