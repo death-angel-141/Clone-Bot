@@ -32,7 +32,7 @@ Hit the deploy to heroku button and follow the further instructions in the scree
 - Visit the [Google Cloud Console](https://console.developers.google.com/apis/credentials)
 - Go to the OAuth Consent tab, fill it, and save.
 - Go to the Credentials tab and click Create Credentials -> OAuth Client ID
-- Choose Other and Create.
+- Choose TV and Limited Input Devices and Create.
 - Visit [Google API page](https://console.developers.google.com/apis/library)
 - Search for Drive and enable it if it is disabled
 - Finally, run the script to generate SECRET_JSON for Google Drive
