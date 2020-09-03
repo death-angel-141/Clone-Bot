@@ -3,7 +3,6 @@ import os
 import threading
 import time
 
-import aria2p
 import telegram.ext as tg
 import socket
 
@@ -27,15 +26,6 @@ def getConfig(name: str):
 
 
 LOGGER = logging.getLogger(__name__)
-
-
-aria2 = aria2p.API(
-    aria2p.Client(
-        host="http://localhost",
-        port=6800,
-        secret="",
-    )
-)
 
 DOWNLOAD_DIR = None
 BOT_TOKEN = None

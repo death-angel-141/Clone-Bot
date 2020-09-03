@@ -35,14 +35,7 @@ def start(update, context):
                 "Type /help to get a list of available commands", context.bot, update)
 
 
-@run_async
-def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!", context.bot, update)
-    # Save restart message object in order to reply to it after restarting
-    fs_utils.clean_all()
-    with open('restart.pickle', 'wb') as status:
-        pickle.dump(restart_message, status)
-    execl(executable, executable, "-m", "bot")
+
 
 
 @run_async
@@ -71,12 +64,16 @@ def bot_help(update, context):
 
 /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
 
+/{BotCommands.CloneCommand}: Clone Files/Folders to Gdrive or Teamdrive
+
+/{BotCommands.PingCommand}: Ping the Bot
+
 '''
     sendMessage(help_string, context.bot, update)
 
 
 def main():
-    fs_utils.start_cleanup()
+    
     # Check if the bot is restarting
     if path.exists('restart.pickle'):
         with open('restart.pickle', 'rb') as status:
@@ -88,8 +85,7 @@ def main():
                                    filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
     ping_handler = CommandHandler(BotCommands.PingCommand, ping,
                                   filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
-    restart_handler = CommandHandler(BotCommands.RestartCommand, restart,
-                                     filters=CustomFilters.owner_filter)
+    
     help_handler = CommandHandler(BotCommands.HelpCommand,
                                   bot_help, filters=CustomFilters.authorized_chat | CustomFilters.authorized_user)
     stats_handler = CommandHandler(BotCommands.StatsCommand,
@@ -97,13 +93,13 @@ def main():
     log_handler = CommandHandler(BotCommands.LogCommand, log, filters=CustomFilters.owner_filter)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(ping_handler)
-    dispatcher.add_handler(restart_handler)
+#    dispatcher.add_handler(restart_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
     updater.start_polling()
     LOGGER.info("Bot Started!")
-    signal.signal(signal.SIGINT, fs_utils.exit_clean_up)
+ #   signal.signal(signal.SIGINT, fs_utils.exit_clean_up)
 
 
 main()
