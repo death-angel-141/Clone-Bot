@@ -1,5 +1,5 @@
 import sys
-from bot import LOGGER, DOWNLOAD_DIR
+from bot import LOGGER
 import shutil
 import os
 import pathlib
