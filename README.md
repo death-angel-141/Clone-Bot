@@ -58,7 +58,6 @@ ___
 Fill up rest of the fields in app.json. Meaning of each fields are discussed below:
 - **BOT_TOKEN** : The telegram bot token that you get from @BotFather
 - **GDRIVE_FOLDER_ID** : This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.
-- **DOWNLOAD_DIR** : The path to the local folder where the downloads should be downloaded to
 - **DOWNLOAD_STATUS_UPDATE_INTERVAL** : A short interval of time in seconds after which the Mirror progress message is updated. (I recommend to keep it 5 seconds at least)  
 - **OWNER_ID** : The Telegram user ID (not username) of the owner of the bot,get by using t.me/userinfobot
 - **AUTO_DELETE_MESSAGE_DURATION** : Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. Note: Set to -1 to never automatically delete messages
