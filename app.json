@@ -83,5 +83,11 @@
       "required": false
     }
   },
-  "stack": "container"
+  
+  "buildpacks": [
+           {
+            "url": "heroku/python"
+        }
+    
+    ]
 }
