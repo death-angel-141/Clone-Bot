@@ -16,7 +16,7 @@ from googleapiclient.http import MediaFileUpload
 from tenacity import *
 from oauth2client.client import OAuth2Credentials
 
-from bot import parent_id, DOWNLOAD_DIR, IS_TEAM_DRIVE, INDEX_URL, \
+from bot import parent_id, IS_TEAM_DRIVE, INDEX_URL, \
     USE_SERVICE_ACCOUNTS,CRED_JSON
 from bot.helper.ext_utils.bot_utils import *
 from bot.helper.ext_utils.fs_utils import get_mime_type
