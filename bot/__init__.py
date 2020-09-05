@@ -27,7 +27,6 @@ def getConfig(name: str):
 
 LOGGER = logging.getLogger(__name__)
 
-DOWNLOAD_DIR = None
 BOT_TOKEN = None
 
 download_dict_lock = threading.Lock()
@@ -47,8 +46,7 @@ try:
     DOWNLOAD_DIR = getConfig('DOWNLOAD_DIR')
     CRED_JSON = getConfig('SECRET_JSON')
     AUTHORIZED_CHATS = [int(i) for i in os.environ.get("AUTH_CHATS", "").split(" ")]
-    if DOWNLOAD_DIR[-1] != '/' or DOWNLOAD_DIR[-1] != '\\':
-        DOWNLOAD_DIR = DOWNLOAD_DIR + '/'
+   
     DOWNLOAD_STATUS_UPDATE_INTERVAL = int(getConfig('DOWNLOAD_STATUS_UPDATE_INTERVAL'))
     OWNER_ID = int(getConfig('OWNER_ID'))
     AUTO_DELETE_MESSAGE_DURATION = int(getConfig('AUTO_DELETE_MESSAGE_DURATION'))
