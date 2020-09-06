@@ -8,8 +8,7 @@
     "googledrive"
   ],
   "repository": "https://github.com/death-angel-141/Clone-Bot.git",
-  "success_url": "https://telegram.dog/LeechYourTorrentsBot",
-  "website": "https://github.com/CW4RR10R/python-aria-mirror-bot",  
+  
   "env": {
     "BOT_TOKEN": {
       "description": "The telegram bot token that you get from @BotFather",
