@@ -1,7 +1,7 @@
 {
   "name": "Gdrive-Clone-bot",
   "description": "This is a telegram bot writen in python for cloning files on the internet to our beloved Google Drive.",
-  "logo": "icon.png",
+  "logo": "https://github.com/death-angel-141/Clone-Bot.git/master/icon.png",
   "keywords": [
     "telegram",
     "mirror",
